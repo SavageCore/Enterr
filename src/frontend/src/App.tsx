@@ -42,7 +42,7 @@ export default function App() {
         <CssBaseline />
         <SnackbarProvider>
           <WebSocketProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/enterr">
               <Routes>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/" element={<MainPage />} />

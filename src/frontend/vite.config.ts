@@ -4,10 +4,10 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/enterr',
   server: {
     proxy: {
-      '/api': {
+      '/enterr/api': {
         target: 'http://localhost:7653',
       },
     },

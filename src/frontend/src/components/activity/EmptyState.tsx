@@ -8,6 +8,7 @@ interface EmptyStateProps {
 
 export default function EmptyState(props: EmptyStateProps) {
   const { noData } = props
+  const baseUrl = '/enterr'
 
   const containerAnimation = {
     hidden: { opacity: 0 },
@@ -29,7 +30,7 @@ export default function EmptyState(props: EmptyStateProps) {
       key={noData ? 0 : 1}
     >
       <motion.img
-        src={noData ? '/images/no-data.svg' : '/images/no-results.svg'}
+        src={noData ? `${baseUrl}/images/no-data.svg` : `${baseUrl}/images/no-results.svg`}
         alt={noData ? 'no data' : 'no result found'}
         variants={imageAnimation}
       />
